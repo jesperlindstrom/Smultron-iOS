@@ -15,6 +15,7 @@
 		A9DF3FD41CE46AF2000EA6FB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9DF3FD21CE46AF2000EA6FB /* LaunchScreen.storyboard */; };
 		A9DF3FDF1CE46AF2000EA6FB /* SmultronTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9DF3FDE1CE46AF2000EA6FB /* SmultronTests.swift */; };
 		A9DF3FEA1CE46AF2000EA6FB /* SmultronUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9DF3FE91CE46AF2000EA6FB /* SmultronUITests.swift */; };
+		F8EA8C5EFA9B212C58CB9314 /* libPods-Smultron.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 229C71DD15EA1C2200EF51EA /* libPods-Smultron.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		229C71DD15EA1C2200EF51EA /* libPods-Smultron.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Smultron.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		67731C71E764CD896A339D74 /* Pods-Smultron.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Smultron.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Smultron/Pods-Smultron.debug.xcconfig"; sourceTree = "<group>"; };
 		A9DF3FC41CE46AF2000EA6FB /* Smultron.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Smultron.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9DF3FC71CE46AF2000EA6FB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A9DF3FC91CE46AF2000EA6FB /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
@@ -49,6 +52,7 @@
 		A9DF3FE51CE46AF2000EA6FB /* SmultronUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SmultronUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9DF3FE91CE46AF2000EA6FB /* SmultronUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmultronUITests.swift; sourceTree = "<group>"; };
 		A9DF3FEB1CE46AF2000EA6FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D65E0CF3C014E31E0DC24046 /* Pods-Smultron.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Smultron.release.xcconfig"; path = "Pods/Target Support Files/Pods-Smultron/Pods-Smultron.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8EA8C5EFA9B212C58CB9314 /* libPods-Smultron.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +81,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1F7BA3C7E3EE95A98AD9B94A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				229C71DD15EA1C2200EF51EA /* libPods-Smultron.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A9DF3FBB1CE46AF1000EA6FB = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +96,8 @@
 				A9DF3FDD1CE46AF2000EA6FB /* SmultronTests */,
 				A9DF3FE81CE46AF2000EA6FB /* SmultronUITests */,
 				A9DF3FC51CE46AF2000EA6FB /* Products */,
+				EA836FC0E3176468F40276CA /* Pods */,
+				1F7BA3C7E3EE95A98AD9B94A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -128,6 +143,15 @@
 			path = SmultronUITests;
 			sourceTree = "<group>";
 		};
+		EA836FC0E3176468F40276CA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				67731C71E764CD896A339D74 /* Pods-Smultron.debug.xcconfig */,
+				D65E0CF3C014E31E0DC24046 /* Pods-Smultron.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +159,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A9DF3FEE1CE46AF2000EA6FB /* Build configuration list for PBXNativeTarget "Smultron" */;
 			buildPhases = (
+				49635756996E97CD20BC4FCE /* 📦 Check Pods Manifest.lock */,
 				A9DF3FC01CE46AF1000EA6FB /* Sources */,
 				A9DF3FC11CE46AF1000EA6FB /* Frameworks */,
 				A9DF3FC21CE46AF1000EA6FB /* Resources */,
+				68E53192AA44F82D662B15C5 /* 📦 Embed Pods Frameworks */,
+				7C28C26A87F3C601E1D4E054 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -256,6 +283,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		49635756996E97CD20BC4FCE /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		68E53192AA44F82D662B15C5 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Smultron/Pods-Smultron-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7C28C26A87F3C601E1D4E054 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Smultron/Pods-Smultron-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A9DF3FC01CE46AF1000EA6FB /* Sources */ = {
@@ -404,6 +479,7 @@
 		};
 		A9DF3FEF1CE46AF2000EA6FB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 67731C71E764CD896A339D74 /* Pods-Smultron.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Smultron/Info.plist;
@@ -415,6 +491,7 @@
 		};
 		A9DF3FF01CE46AF2000EA6FB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D65E0CF3C014E31E0DC24046 /* Pods-Smultron.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Smultron/Info.plist;
@@ -489,6 +566,7 @@
 				A9DF3FF01CE46AF2000EA6FB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A9DF3FF11CE46AF2000EA6FB /* Build configuration list for PBXNativeTarget "SmultronTests" */ = {
 			isa = XCConfigurationList;
@@ -497,6 +575,7 @@
 				A9DF3FF31CE46AF2000EA6FB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A9DF3FF41CE46AF2000EA6FB /* Build configuration list for PBXNativeTarget "SmultronUITests" */ = {
 			isa = XCConfigurationList;
@@ -505,6 +584,7 @@
 				A9DF3FF61CE46AF2000EA6FB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
