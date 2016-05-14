@@ -103,29 +103,29 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ABC" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D5T-qy-gGy">
-                                <rect key="frame" x="220" y="105" width="161" height="100"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ABC" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D5T-qy-gGy">
+                                <rect key="frame" x="220" y="72" width="161" height="100"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="100" id="VH1-MW-XQ0"/>
-                                    <constraint firstAttribute="width" constant="161" id="nOY-21-OfA"/>
+                                    <constraint firstAttribute="width" constant="161" id="kx7-h6-tv0"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="51"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="edP-JQ-XCl">
-                                <rect key="frame" x="0.0" y="44" width="600" height="556"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <rect key="frame" x="0.0" y="64" width="600" height="556"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="0.98039215690000003" green="0.0" blue="0.32549019610000002" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="edP-JQ-XCl" firstAttribute="top" secondItem="6bi-Tn-e4e" secondAttribute="topMargin" constant="44" id="3YR-uI-O9l"/>
-                            <constraint firstItem="D5T-qy-gGy" firstAttribute="centerX" secondItem="6bi-Tn-e4e" secondAttribute="centerX" id="56L-Ef-raa"/>
-                            <constraint firstItem="edP-JQ-XCl" firstAttribute="leading" secondItem="6bi-Tn-e4e" secondAttribute="leading" id="5eT-5G-F99"/>
-                            <constraint firstItem="edP-JQ-XCl" firstAttribute="bottom" secondItem="BR4-PH-tXc" secondAttribute="top" id="8Kr-XI-6d3"/>
-                            <constraint firstAttribute="trailing" secondItem="edP-JQ-XCl" secondAttribute="trailing" id="J57-iU-JLV"/>
-                            <constraint firstItem="D5T-qy-gGy" firstAttribute="top" secondItem="fvH-4I-HVX" secondAttribute="bottom" constant="41" id="p6J-V6-vtD"/>
+                            <constraint firstItem="edP-JQ-XCl" firstAttribute="centerX" secondItem="D5T-qy-gGy" secondAttribute="centerX" id="Bkw-mr-8zX"/>
+                            <constraint firstItem="D5T-qy-gGy" firstAttribute="top" secondItem="fvH-4I-HVX" secondAttribute="bottom" constant="8" symbolic="YES" id="Hke-Fs-Vhb"/>
+                            <constraint firstAttribute="trailing" secondItem="edP-JQ-XCl" secondAttribute="trailing" id="PBL-CY-Z1w"/>
+                            <constraint firstItem="edP-JQ-XCl" firstAttribute="top" secondItem="fvH-4I-HVX" secondAttribute="bottom" id="Un4-Pb-soz"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="edP-JQ-XCl" secondAttribute="bottom" constant="-20" id="Va2-dv-el9"/>
+                            <constraint firstItem="BR4-PH-tXc" firstAttribute="top" secondItem="D5T-qy-gGy" secondAttribute="bottom" constant="428" id="WzL-Wy-hyU"/>
+                            <constraint firstItem="edP-JQ-XCl" firstAttribute="leading" secondItem="6bi-Tn-e4e" secondAttribute="leading" id="lV7-hH-Nov"/>
                         </constraints>
                     </view>
                     <connections>
