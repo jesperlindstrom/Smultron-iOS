@@ -2,20 +2,31 @@ import Foundation
 
 class APIService {
   static var instance = APIService()
+  private var userId: Int
+    
+  init() { }
     
   func createRoom() -> Room {
+    self.userId = 1
+    
     return Room(id: 1, code: "THE CODE")
   }
   
   func joinRoom(code: String) -> Room {
+    self.userId = 1
+    
     return Room(id: 1, code: code)
   }
   
   func getFirstPlace(roomId: Int) -> Place {
+    // send userId with request
+    
     return fakePlace()
   }
   
   func registerSwipe(placeId: Int, approved: Bool) -> (Place, matchCount: Int) {
+    // send userId with request
+    
     let place = fakePlace()
     
     return (place, 2)
