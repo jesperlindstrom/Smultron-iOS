@@ -23,7 +23,7 @@
 		A989F35A1CE73CEC00C736E4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A989F3591CE73CEC00C736E4 /* Foundation.framework */; };
 		A989F35C1CE73CF300C736E4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A989F35B1CE73CF300C736E4 /* CoreGraphics.framework */; };
 		A9CEC8CB1CE7546F00F04BB2 /* smultron.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A9CEC8CA1CE7546E00F04BB2 /* smultron.jpg */; };
-		A9CEC8CD1CE7581800F04BB2 /* smultron-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = A9CEC8CC1CE7581800F04BB2 /* smultron-logo.png */; };
+		A9CEC8CF1CE762C600F04BB2 /* smultron-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = A9CEC8CE1CE762C600F04BB2 /* smultron-logo.png */; };
 		A9DF3FC81CE46AF2000EA6FB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9DF3FC71CE46AF2000EA6FB /* AppDelegate.swift */; };
 		A9DF3FCA1CE46AF2000EA6FB /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9DF3FC91CE46AF2000EA6FB /* MasterViewController.swift */; };
 		A9DF3FCC1CE46AF2000EA6FB /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9DF3FCB1CE46AF2000EA6FB /* DetailViewController.swift */; };
@@ -68,7 +68,7 @@
 		A989F3591CE73CEC00C736E4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		A989F35B1CE73CF300C736E4 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		A9CEC8CA1CE7546E00F04BB2 /* smultron.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = smultron.jpg; sourceTree = "<group>"; };
-		A9CEC8CC1CE7581800F04BB2 /* smultron-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "smultron-logo.png"; path = "../../../../Desktop/smultron-logo.png"; sourceTree = "<group>"; };
+		A9CEC8CE1CE762C600F04BB2 /* smultron-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "smultron-logo.png"; sourceTree = "<group>"; };
 		A9DF3FC41CE46AF2000EA6FB /* Smultron.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Smultron.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9DF3FC71CE46AF2000EA6FB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A9DF3FC91CE46AF2000EA6FB /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
@@ -163,7 +163,7 @@
 			isa = PBXGroup;
 			children = (
 				A9CEC8CA1CE7546E00F04BB2 /* smultron.jpg */,
-				A9CEC8CC1CE7581800F04BB2 /* smultron-logo.png */,
+				A9CEC8CE1CE762C600F04BB2 /* smultron-logo.png */,
 				A989F34B1CE7236900C736E4 /* test.jpg */,
 				A9DF3FC71CE46AF2000EA6FB /* AppDelegate.swift */,
 				A9DF3FC91CE46AF2000EA6FB /* MasterViewController.swift */,
@@ -321,7 +321,7 @@
 				A9DF3FD41CE46AF2000EA6FB /* LaunchScreen.storyboard in Resources */,
 				A989F34C1CE7236900C736E4 /* test.jpg in Resources */,
 				A989F3481CE7067F00C736E4 /* Images.xcassets in Resources */,
-				A9CEC8CD1CE7581800F04BB2 /* smultron-logo.png in Resources */,
+				A9CEC8CF1CE762C600F04BB2 /* smultron-logo.png in Resources */,
 				A9CEC8CB1CE7546F00F04BB2 /* smultron.jpg in Resources */,
 				A9DF3FD11CE46AF2000EA6FB /* Assets.xcassets in Resources */,
 				A9DF3FCF1CE46AF2000EA6FB /* Main.storyboard in Resources */,
