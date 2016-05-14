@@ -46,7 +46,6 @@ class DraggableViewBackground: UIView, DraggableViewDelegate {
         print("I draggableviewbackground")
         print(data)
         
-        
         self.backgroundColor = UIColor(red: 0.92, green: 0.93, blue: 0.95, alpha: 0)
         
         xButton = UIButton(frame: CGRectMake((self.frame.size.width - CARD_WIDTH)/2 + 35, self.frame.size.height/2 + CARD_HEIGHT/2 - 65, 59, 59))
@@ -63,7 +62,8 @@ class DraggableViewBackground: UIView, DraggableViewDelegate {
     
     func createDraggableViewWithDataAtIndex(index: NSInteger) -> DraggableView {
         let draggableView = DraggableView(frame: CGRectMake((self.frame.size.width - CARD_WIDTH)/2, (self.frame.size.height - CARD_HEIGHT)/2, CARD_WIDTH, CARD_HEIGHT-100))
-        draggableView.information.text = exampleCardLabels[index]
+        draggableView.information.text = "test"
+        //draggableView.id = data[index]
         draggableView.delegate = self
         return draggableView
     }

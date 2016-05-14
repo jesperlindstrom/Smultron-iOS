@@ -3,12 +3,11 @@ import UIKit
 class DetailViewController: UIViewController {
     private let api = APIService.instance
     
-    @IBOutlet weak var detailDescriptionLabel: UILabel!
     @IBOutlet weak var SwipeView: UIView!
     @IBOutlet weak var codeLabel: UILabel!
     
-    var id = ""
-    var code = ""
+    var id: String?
+    var code: String?
     var data: NSDictionary?
 
     var detailItem: AnyObject? {
@@ -19,12 +18,7 @@ class DetailViewController: UIViewController {
     }
 
     func configureView() {
-        // Update the user interface for the detail item.
-        if let detail = self.detailItem {
-            if let label = self.detailDescriptionLabel {
-                label.text = detail.description
-            }
-        }
+        
     }
 
     override func viewDidLoad() {
