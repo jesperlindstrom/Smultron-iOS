@@ -11,6 +11,7 @@ import UIKit
 class DetailViewController: UIViewController {
 
     @IBOutlet weak var detailDescriptionLabel: UILabel!
+    @IBOutlet weak var SwipeView: UIView!
 
 
     var detailItem: AnyObject? {
@@ -32,6 +33,8 @@ class DetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        let draggableBackground: DraggableViewBackground = DraggableViewBackground(frame: self.view.frame)
+        self.SwipeView.addSubview(draggableBackground)
         self.configureView()
     }
 
