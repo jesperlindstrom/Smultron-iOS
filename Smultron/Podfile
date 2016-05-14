@@ -1,2 +1,3 @@
 target 'Smultron' do
+    pod 'RestKit', '~> 0.24.0'
 end

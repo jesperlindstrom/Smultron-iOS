@@ -12,6 +12,15 @@
 		A989F3461CE705D800C736E4 /* OverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A989F3451CE705D800C736E4 /* OverlayView.swift */; };
 		A989F3481CE7067F00C736E4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A989F3471CE7067F00C736E4 /* Images.xcassets */; };
 		A989F34A1CE7136400C736E4 /* MatchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A989F3491CE7136400C736E4 /* MatchViewController.swift */; };
+		A989F34C1CE7236900C736E4 /* test.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A989F34B1CE7236900C736E4 /* test.jpg */; };
+		A989F34E1CE7394900C736E4 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A989F34D1CE7394900C736E4 /* MobileCoreServices.framework */; };
+		A989F3501CE73CAE00C736E4 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A989F34F1CE73CAE00C736E4 /* Security.framework */; };
+		A989F3521CE73CBE00C736E4 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A989F3511CE73CBE00C736E4 /* CFNetwork.framework */; };
+		A989F3541CE73CCC00C736E4 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A989F3531CE73CCC00C736E4 /* SystemConfiguration.framework */; };
+		A989F3561CE73CD600C736E4 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A989F3551CE73CD600C736E4 /* CoreData.framework */; };
+		A989F3581CE73CE000C736E4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A989F3571CE73CE000C736E4 /* UIKit.framework */; };
+		A989F35A1CE73CEC00C736E4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A989F3591CE73CEC00C736E4 /* Foundation.framework */; };
+		A989F35C1CE73CF300C736E4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A989F35B1CE73CF300C736E4 /* CoreGraphics.framework */; };
 		A9DF3FC81CE46AF2000EA6FB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9DF3FC71CE46AF2000EA6FB /* AppDelegate.swift */; };
 		A9DF3FCA1CE46AF2000EA6FB /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9DF3FC91CE46AF2000EA6FB /* MasterViewController.swift */; };
 		A9DF3FCC1CE46AF2000EA6FB /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9DF3FCB1CE46AF2000EA6FB /* DetailViewController.swift */; };
@@ -48,6 +57,15 @@
 		A989F3451CE705D800C736E4 /* OverlayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OverlayView.swift; sourceTree = "<group>"; };
 		A989F3471CE7067F00C736E4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		A989F3491CE7136400C736E4 /* MatchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatchViewController.swift; sourceTree = "<group>"; };
+		A989F34B1CE7236900C736E4 /* test.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = test.jpg; sourceTree = "<group>"; };
+		A989F34D1CE7394900C736E4 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		A989F34F1CE73CAE00C736E4 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		A989F3511CE73CBE00C736E4 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		A989F3531CE73CCC00C736E4 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		A989F3551CE73CD600C736E4 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		A989F3571CE73CE000C736E4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		A989F3591CE73CEC00C736E4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		A989F35B1CE73CF300C736E4 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		A9DF3FC41CE46AF2000EA6FB /* Smultron.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Smultron.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9DF3FC71CE46AF2000EA6FB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A9DF3FC91CE46AF2000EA6FB /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
@@ -70,6 +88,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A989F35C1CE73CF300C736E4 /* CoreGraphics.framework in Frameworks */,
+				A989F35A1CE73CEC00C736E4 /* Foundation.framework in Frameworks */,
+				A989F3581CE73CE000C736E4 /* UIKit.framework in Frameworks */,
+				A989F3561CE73CD600C736E4 /* CoreData.framework in Frameworks */,
+				A989F3541CE73CCC00C736E4 /* SystemConfiguration.framework in Frameworks */,
+				A989F3521CE73CBE00C736E4 /* CFNetwork.framework in Frameworks */,
+				A989F3501CE73CAE00C736E4 /* Security.framework in Frameworks */,
+				A989F34E1CE7394900C736E4 /* MobileCoreServices.framework in Frameworks */,
 				F8EA8C5EFA9B212C58CB9314 /* libPods-Smultron.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -94,6 +120,14 @@
 		1F7BA3C7E3EE95A98AD9B94A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A989F35B1CE73CF300C736E4 /* CoreGraphics.framework */,
+				A989F3591CE73CEC00C736E4 /* Foundation.framework */,
+				A989F3571CE73CE000C736E4 /* UIKit.framework */,
+				A989F3551CE73CD600C736E4 /* CoreData.framework */,
+				A989F3531CE73CCC00C736E4 /* SystemConfiguration.framework */,
+				A989F3511CE73CBE00C736E4 /* CFNetwork.framework */,
+				A989F34F1CE73CAE00C736E4 /* Security.framework */,
+				A989F34D1CE7394900C736E4 /* MobileCoreServices.framework */,
 				229C71DD15EA1C2200EF51EA /* libPods-Smultron.a */,
 			);
 			name = Frameworks;
@@ -124,6 +158,7 @@
 		A9DF3FC61CE46AF2000EA6FB /* Smultron */ = {
 			isa = PBXGroup;
 			children = (
+				A989F34B1CE7236900C736E4 /* test.jpg */,
 				A9DF3FC71CE46AF2000EA6FB /* AppDelegate.swift */,
 				A9DF3FC91CE46AF2000EA6FB /* MasterViewController.swift */,
 				A9DF3FCB1CE46AF2000EA6FB /* DetailViewController.swift */,
@@ -278,6 +313,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A9DF3FD41CE46AF2000EA6FB /* LaunchScreen.storyboard in Resources */,
+				A989F34C1CE7236900C736E4 /* test.jpg in Resources */,
 				A989F3481CE7067F00C736E4 /* Images.xcassets in Resources */,
 				A9DF3FD11CE46AF2000EA6FB /* Assets.xcassets in Resources */,
 				A9DF3FCF1CE46AF2000EA6FB /* Main.storyboard in Resources */,

@@ -27,6 +27,8 @@ class DraggableView: UIView {
     var originPoint: CGPoint!
     var overlayView: OverlayView!
     var information: UILabel!
+    var image: UIImage!
+    var imageView: UIImageView!
     var xFromCenter: Float!
     var yFromCenter: Float!
     
@@ -39,7 +41,12 @@ class DraggableView: UIView {
         
         self.setupView()
         
-        information = UILabel(frame: CGRectMake(0, 50, self.frame.size.width, 100))
+        information = UILabel(frame: CGRectMake(0, self.frame.size.height - 90, self.frame.size.width, 100))
+        imageView = UIImageView(frame: CGRectMake(0, 200, self.frame.size.width, 300))
+        image = UIImage(named: "test.jpg")
+        
+        imageView = UIImageView(image: image!)
+
         information.text = "no info given"
         information.textAlignment = NSTextAlignment.Center
         information.textColor = UIColor.blackColor()
@@ -50,6 +57,9 @@ class DraggableView: UIView {
         
         self.addGestureRecognizer(panGestureRecognizer)
         self.addSubview(information)
+        self.addSubview(imageView)
+        imageView.frame = CGRectMake(0,-70,self.frame.size.width,300)
+        imageView.contentMode = UIViewContentMode.ScaleAspectFit
         
         overlayView = OverlayView(frame: CGRectMake(self.frame.size.width/2-100, 0, 100, 100))
         overlayView.alpha = 0

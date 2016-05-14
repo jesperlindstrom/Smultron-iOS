@@ -35,6 +35,7 @@ class DetailViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         let draggableBackground: DraggableViewBackground = DraggableViewBackground(frame: self.view.frame)
         self.SwipeView.addSubview(draggableBackground)
+        navigationController!.navigationBar.barTintColor = UIColor.whiteColor()
         self.configureView()
     }
 

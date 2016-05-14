@@ -13,6 +13,8 @@ class MatchViewController: UINavigationController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationController!.navigationBar.barTintColor = UIColor.whiteColor()
+        navigationController!.navigationItem.backBarButtonItem?.tintColor = UIColor.blackColor()
         // Do any additional setup after loading the view, typically from a nib.
     }
     
