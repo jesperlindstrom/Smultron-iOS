@@ -2,9 +2,11 @@ import Foundation
 
 class APIService {
   static var instance = APIService()
-  private var userId: Int
+  private var userId: Int?
     
-  init() { }
+  init() {
+    
+  }
     
   func createRoom() -> Room {
     self.userId = 1

@@ -8,6 +8,7 @@ class Place {
   let linkUrl: String
   
   init(id: Int, title: String, category: String, imageUrl: String, linkUrl: String) {
+    self.id = id;
     self.title = title
     self.category = category
     self.imageUrl = imageUrl
