@@ -9,6 +9,7 @@ class DetailViewController: UIViewController {
     
     var id = ""
     var code = ""
+    var data: NSDictionary?
 
     var detailItem: AnyObject? {
         didSet {
@@ -32,6 +33,8 @@ class DetailViewController: UIViewController {
         // Do any additional setup after loading the view,q typically from a nib.
         codeLabel.text = code
         let draggableBackground: DraggableViewBackground = DraggableViewBackground(frame: self.view.frame)
+        
+        draggableBackground.data = data
         self.SwipeView.addSubview(draggableBackground)
         navigationController!.navigationBar.barTintColor = UIColor.whiteColor()
         self.configureView()

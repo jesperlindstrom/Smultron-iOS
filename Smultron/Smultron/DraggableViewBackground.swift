@@ -10,7 +10,8 @@ import Foundation
 import UIKit
 
 class DraggableViewBackground: UIView, DraggableViewDelegate {
-    private var api = APo
+    private var api = APIService.instance
+    var data: NSDictionary?
     var exampleCardLabels: [String]!
     var allCards: [DraggableView]!
     
@@ -42,6 +43,10 @@ class DraggableViewBackground: UIView, DraggableViewDelegate {
     }
     
     func setupView() -> Void {
+        print("I draggableviewbackground")
+        print(data)
+        
+        
         self.backgroundColor = UIColor(red: 0.92, green: 0.93, blue: 0.95, alpha: 0)
         
         xButton = UIButton(frame: CGRectMake((self.frame.size.width - CARD_WIDTH)/2 + 35, self.frame.size.height/2 + CARD_HEIGHT/2 - 65, 59, 59))

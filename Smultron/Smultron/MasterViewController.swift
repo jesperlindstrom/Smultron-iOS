@@ -6,11 +6,14 @@ class MasterViewController: UIViewController {
     @IBOutlet weak var codeField: UITextField!
     @IBOutlet weak var cityField: UITextField!
     
+    var data: NSDictionary?
+    
     @IBAction func createRoom(sender: AnyObject) {
         let city = cityField.text!
         print("createRoom")
         api.createRoom(city, callback: { response in
             print(response)
+            self.data = response
             self.performSegueWithIdentifier("detail", sender: sender)
         })
     }
@@ -19,6 +22,7 @@ class MasterViewController: UIViewController {
         print("joinRoom")
         api.joinRoom(code, callback: { response in
             print(response)
+            self.data = response
             self.performSegueWithIdentifier("detail", sender: sender)
         })
     }
@@ -52,6 +56,7 @@ class MasterViewController: UIViewController {
         
         theRoom.code = codeField.text!
         theRoom.id = api.roomId!
+        theRoom.data = data
     }
 
 
