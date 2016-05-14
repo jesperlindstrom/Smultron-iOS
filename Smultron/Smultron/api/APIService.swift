@@ -1,46 +1,85 @@
 import Foundation
+import Alamofire
 
 class APIService {
   static var instance = APIService()
-  private var userId: Int?
+  static var BASE_URL = "http://localhost:8000"
+  var userId: String?
+  var roomId: String?
+  var destination: String?
+  var code: String?
     
   init() {
-    
+    createRoom("Stockholm, Sweden", callback: { room in
+        print(room)
+    })
   }
     
-  func createRoom() -> Room {
-    self.userId = 1
+  func createRoom(destination: String, callback: (NSDictionary) -> Void) {
+    let url = APIService.BASE_URL + "/room"
+    print("calling " + url)
     
-    return Room(id: 1, code: "THE CODE")
-  }
-  
-  func joinRoom(code: String) -> Room {
-    self.userId = 1
-    
-    return Room(id: 1, code: code)
-  }
-  
-  func getFirstPlace(roomId: Int) -> Place {
-    // send userId with request
-    
-    return fakePlace()
-  }
-  
-  func registerSwipe(placeId: Int, approved: Bool) -> (Place, matchCount: Int) {
-    // send userId with request
-    
-    let place = fakePlace()
-    
-    return (place, 2)
+    Alamofire.request(.POST, url, parameters: [ "destination": destination ]).responseJSON { response in
+        
+        if let JSON = response.result.value {
+            let data = (JSON as? NSDictionary)!
+
+            self.userId = String(data["user_id"] as! Int?)
+            self.roomId = String(data["room_id"] as! Int?)
+            self.code = data["code"] as! String?
+            self.destination = data["destination"] as! String?
+            
+            callback(data)
+        }
+    }
   }
   
-  private func fakePlace() -> Place {
-    return Place(id: 0, title: "Eiffeltornet IGEN!", category: "Ett jävla torn IGEN!", imageUrl: "http://cdn.history.com/sites/2/2015/04/hith-eiffel-tower-iStock_000016468972Large.jpg", linkUrl: "http://google.com")
+  func joinRoom(code: String, callback: (NSDictionary) -> Void) {
+    let url = APIService.BASE_URL + "/room/" + code
+    print("calling " + url)
+    
+    Alamofire.request(.POST, url).responseJSON { response in
+        if let JSON = response.result.value {
+            let data = (JSON as? NSDictionary)!
+            
+            self.userId = data["user_id"] as! String?
+            self.roomId = data["room_id"] as! String?
+            self.code = data["code"] as! String?
+            self.destination = data["destination"] as! String?
+            
+            callback(data)
+        }
+    }
   }
   
-  func getMatches(roomId: Int) -> [Place] {
-    return [
-      fakePlace(), fakePlace(), fakePlace()
+  func registerSwipe(placeId: String, approved: Bool, callback: (NSDictionary) -> Void) {
+    let url = APIService.BASE_URL + "/swipe"
+    print("calling " + url)
+    
+    let params = [
+        "user_id": self.userId!,
+        "place_id": placeId,
+        "state": approved ? "1" : "0"
     ]
+    
+    Alamofire.request(.POST, url, parameters: params).responseJSON { response in
+        if let JSON = response.result.value {
+            let data = (JSON as? NSDictionary)!
+            
+            callback(data)
+        }
+    }
+  }
+  
+  func getMatches(callback: (NSDictionary) -> Void) {
+    let url = APIService.BASE_URL + "/room/" + self.roomId!
+    
+    Alamofire.request(.GET, url).responseJSON { response in
+        if let JSON = response.result.value {
+            let data = (JSON as? NSDictionary)!
+            
+            callback(data)
+        }
+    }
   }
 }
