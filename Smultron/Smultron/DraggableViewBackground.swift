@@ -10,6 +10,7 @@ import Foundation
 import UIKit
 
 class DraggableViewBackground: UIView, DraggableViewDelegate {
+    private var api = APo
     var exampleCardLabels: [String]!
     var allCards: [DraggableView]!
     
