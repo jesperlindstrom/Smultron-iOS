@@ -7,9 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2466F52F1CE7557900F20BC0 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2466F52E1CE7557900F20BC0 /* APIService.swift */; };
-		2466F5311CE755A100F20BC0 /* Room.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2466F5301CE755A100F20BC0 /* Room.swift */; };
-		2466F5331CE75C2C00F20BC0 /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2466F5321CE75C2C00F20BC0 /* Place.swift */; };
 		2B82BF2F9A9D753E01D7F30F /* Pods_Smultron.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECF800F7D5AA1DF89278435D /* Pods_Smultron.framework */; };
 		A989F3421CE7057F00C736E4 /* DraggableViewBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = A989F3411CE7057F00C736E4 /* DraggableViewBackground.swift */; };
 		A989F3441CE705B400C736E4 /* DraggableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A989F3431CE705B400C736E4 /* DraggableView.swift */; };
@@ -25,6 +22,8 @@
 		A989F3581CE73CE000C736E4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A989F3571CE73CE000C736E4 /* UIKit.framework */; };
 		A989F35A1CE73CEC00C736E4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A989F3591CE73CEC00C736E4 /* Foundation.framework */; };
 		A989F35C1CE73CF300C736E4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A989F35B1CE73CF300C736E4 /* CoreGraphics.framework */; };
+		A9CEC8CB1CE7546F00F04BB2 /* smultron.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A9CEC8CA1CE7546E00F04BB2 /* smultron.jpg */; };
+		A9CEC8CD1CE7581800F04BB2 /* smultron-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = A9CEC8CC1CE7581800F04BB2 /* smultron-logo.png */; };
 		A9DF3FC81CE46AF2000EA6FB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9DF3FC71CE46AF2000EA6FB /* AppDelegate.swift */; };
 		A9DF3FCA1CE46AF2000EA6FB /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9DF3FC91CE46AF2000EA6FB /* MasterViewController.swift */; };
 		A9DF3FCC1CE46AF2000EA6FB /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9DF3FCB1CE46AF2000EA6FB /* DetailViewController.swift */; };
@@ -53,9 +52,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		2466F52E1CE7557900F20BC0 /* APIService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
-		2466F5301CE755A100F20BC0 /* Room.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Room.swift; sourceTree = "<group>"; };
-		2466F5321CE75C2C00F20BC0 /* Place.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
 		67731C71E764CD896A339D74 /* Pods-Smultron.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Smultron.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Smultron/Pods-Smultron.debug.xcconfig"; sourceTree = "<group>"; };
 		A989F3411CE7057F00C736E4 /* DraggableViewBackground.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DraggableViewBackground.swift; sourceTree = "<group>"; };
 		A989F3431CE705B400C736E4 /* DraggableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DraggableView.swift; sourceTree = "<group>"; };
@@ -71,6 +67,8 @@
 		A989F3571CE73CE000C736E4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		A989F3591CE73CEC00C736E4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		A989F35B1CE73CF300C736E4 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		A9CEC8CA1CE7546E00F04BB2 /* smultron.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = smultron.jpg; sourceTree = "<group>"; };
+		A9CEC8CC1CE7581800F04BB2 /* smultron-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "smultron-logo.png"; path = "../../../../Desktop/smultron-logo.png"; sourceTree = "<group>"; };
 		A9DF3FC41CE46AF2000EA6FB /* Smultron.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Smultron.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9DF3FC71CE46AF2000EA6FB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A9DF3FC91CE46AF2000EA6FB /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
@@ -139,16 +137,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		2466F52D1CE7557900F20BC0 /* api */ = {
-			isa = PBXGroup;
-			children = (
-				2466F52E1CE7557900F20BC0 /* APIService.swift */,
-				2466F5301CE755A100F20BC0 /* Room.swift */,
-				2466F5321CE75C2C00F20BC0 /* Place.swift */,
-			);
-			path = api;
-			sourceTree = "<group>";
-		};
 		A9DF3FBB1CE46AF1000EA6FB = {
 			isa = PBXGroup;
 			children = (
@@ -174,7 +162,8 @@
 		A9DF3FC61CE46AF2000EA6FB /* Smultron */ = {
 			isa = PBXGroup;
 			children = (
-				2466F52D1CE7557900F20BC0 /* api */,
+				A9CEC8CA1CE7546E00F04BB2 /* smultron.jpg */,
+				A9CEC8CC1CE7581800F04BB2 /* smultron-logo.png */,
 				A989F34B1CE7236900C736E4 /* test.jpg */,
 				A9DF3FC71CE46AF2000EA6FB /* AppDelegate.swift */,
 				A9DF3FC91CE46AF2000EA6FB /* MasterViewController.swift */,
@@ -332,6 +321,8 @@
 				A9DF3FD41CE46AF2000EA6FB /* LaunchScreen.storyboard in Resources */,
 				A989F34C1CE7236900C736E4 /* test.jpg in Resources */,
 				A989F3481CE7067F00C736E4 /* Images.xcassets in Resources */,
+				A9CEC8CD1CE7581800F04BB2 /* smultron-logo.png in Resources */,
+				A9CEC8CB1CE7546F00F04BB2 /* smultron.jpg in Resources */,
 				A9DF3FD11CE46AF2000EA6FB /* Assets.xcassets in Resources */,
 				A9DF3FCF1CE46AF2000EA6FB /* Main.storyboard in Resources */,
 			);
@@ -411,11 +402,8 @@
 				A9DF3FCA1CE46AF2000EA6FB /* MasterViewController.swift in Sources */,
 				A989F3461CE705D800C736E4 /* OverlayView.swift in Sources */,
 				A989F34A1CE7136400C736E4 /* MatchViewController.swift in Sources */,
-				2466F5311CE755A100F20BC0 /* Room.swift in Sources */,
 				A989F3441CE705B400C736E4 /* DraggableView.swift in Sources */,
-				2466F52F1CE7557900F20BC0 /* APIService.swift in Sources */,
 				A9DF3FC81CE46AF2000EA6FB /* AppDelegate.swift in Sources */,
-				2466F5331CE75C2C00F20BC0 /* Place.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
