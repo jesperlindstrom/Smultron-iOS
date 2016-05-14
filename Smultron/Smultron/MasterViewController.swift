@@ -50,7 +50,8 @@ class MasterViewController: UIViewController {
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         let theRoom: DetailViewController = segue.destinationViewController as! DetailViewController
         
-
+        theRoom.code = codeField.text!
+        theRoom.id = api.roomId
     }
 
 
