@@ -10,19 +10,16 @@ import UIKit
 
 class MasterViewController: UIViewController {
     private let api = APIService.instance
-    var room: Room?
 
     @IBOutlet weak var codeField: UITextField!
     @IBOutlet weak var cityField: UITextField!
     
     @IBAction func createRoom(sender: AnyObject) {
         var code = codeField.text
-        room = api.createRoom()
         //code!
     }
     @IBAction func joinRoom(sender: AnyObject) {
         var city = cityField.text
-        room = api.joinRoom(city!)
     }
     
     override func viewDidLoad() {
@@ -52,8 +49,7 @@ class MasterViewController: UIViewController {
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         let theRoom: DetailViewController = segue.destinationViewController as! DetailViewController
         
-        theRoom.id = (self.room?.id)!
-        theRoom.code = (self.room?.code)!
+
     }
 
 
