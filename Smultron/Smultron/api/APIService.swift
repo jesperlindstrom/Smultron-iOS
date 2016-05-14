@@ -10,9 +10,7 @@ class APIService {
   var code: String?
     
   init() {
-    createRoom("Stockholm, Sweden", callback: { room in
-        print(room)
-    })
+    
   }
     
   func createRoom(destination: String, callback: (NSDictionary) -> Void) {

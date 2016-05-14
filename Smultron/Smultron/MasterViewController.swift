@@ -8,7 +8,7 @@ class MasterViewController: UIViewController {
     
     @IBAction func createRoom(sender: AnyObject) {
         let city = cityField.text!
-        
+        print("createRoom")
         api.createRoom(city, callback: { response in
             print(response)
             self.performSegueWithIdentifier("detail", sender: sender)
@@ -16,7 +16,7 @@ class MasterViewController: UIViewController {
     }
     @IBAction func joinRoom(sender: AnyObject) {
         let code = codeField.text!
-        
+        print("joinRoom")
         api.joinRoom(code, callback: { response in
             print(response)
             self.performSegueWithIdentifier("detail", sender: sender)
