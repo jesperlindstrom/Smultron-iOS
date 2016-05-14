@@ -1,11 +1,3 @@
-//
-//  MasterViewController.swift
-//  Smultron
-//
-//  Created by Marco Koivisto on 2016-05-12.
-//  Copyright © 2016 Marco Koivisto. All rights reserved.
-//
-
 import UIKit
 
 class MasterViewController: UIViewController {
@@ -15,18 +7,27 @@ class MasterViewController: UIViewController {
     @IBOutlet weak var cityField: UITextField!
     
     @IBAction func createRoom(sender: AnyObject) {
-        var code = codeField.text
-        //code!
+        let city = cityField.text!
+        
+        api.createRoom(city, callback: { response in
+            print(response)
+            self.performSegueWithIdentifier("detail", sender: sender)
+        })
     }
     @IBAction func joinRoom(sender: AnyObject) {
-        var city = cityField.text
+        let code = codeField.text!
+        
+        api.joinRoom(code, callback: { response in
+            print(response)
+            self.performSegueWithIdentifier("detail", sender: sender)
+        })
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationController!.navigationBar.barTintColor = UIColor.whiteColor()
-        let logo = UIImage(named: "smultron-logo.png")
-        let imageView = UIImageView(image:logo)
+        //let logo = UIImage(named: "smultron-logo.png")
+        //let imageView = UIImageView(image:logo)
         //self.navigationItem.titleView = imageView
         // Do any additional setup after loading the view, typically from a nib.
     }
