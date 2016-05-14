@@ -11,6 +11,7 @@
 		A989F3441CE705B400C736E4 /* DraggableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A989F3431CE705B400C736E4 /* DraggableView.swift */; };
 		A989F3461CE705D800C736E4 /* OverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A989F3451CE705D800C736E4 /* OverlayView.swift */; };
 		A989F3481CE7067F00C736E4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A989F3471CE7067F00C736E4 /* Images.xcassets */; };
+		A989F34A1CE7136400C736E4 /* MatchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A989F3491CE7136400C736E4 /* MatchViewController.swift */; };
 		A9DF3FC81CE46AF2000EA6FB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9DF3FC71CE46AF2000EA6FB /* AppDelegate.swift */; };
 		A9DF3FCA1CE46AF2000EA6FB /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9DF3FC91CE46AF2000EA6FB /* MasterViewController.swift */; };
 		A9DF3FCC1CE46AF2000EA6FB /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9DF3FCB1CE46AF2000EA6FB /* DetailViewController.swift */; };
@@ -46,6 +47,7 @@
 		A989F3431CE705B400C736E4 /* DraggableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DraggableView.swift; sourceTree = "<group>"; };
 		A989F3451CE705D800C736E4 /* OverlayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OverlayView.swift; sourceTree = "<group>"; };
 		A989F3471CE7067F00C736E4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		A989F3491CE7136400C736E4 /* MatchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatchViewController.swift; sourceTree = "<group>"; };
 		A9DF3FC41CE46AF2000EA6FB /* Smultron.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Smultron.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9DF3FC71CE46AF2000EA6FB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A9DF3FC91CE46AF2000EA6FB /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
@@ -133,6 +135,7 @@
 				A989F3411CE7057F00C736E4 /* DraggableViewBackground.swift */,
 				A989F3431CE705B400C736E4 /* DraggableView.swift */,
 				A989F3451CE705D800C736E4 /* OverlayView.swift */,
+				A989F3491CE7136400C736E4 /* MatchViewController.swift */,
 			);
 			path = Smultron;
 			sourceTree = "<group>";
@@ -354,6 +357,7 @@
 				A9DF3FCC1CE46AF2000EA6FB /* DetailViewController.swift in Sources */,
 				A9DF3FCA1CE46AF2000EA6FB /* MasterViewController.swift in Sources */,
 				A989F3461CE705D800C736E4 /* OverlayView.swift in Sources */,
+				A989F34A1CE7136400C736E4 /* MatchViewController.swift in Sources */,
 				A989F3441CE705B400C736E4 /* DraggableView.swift in Sources */,
 				A9DF3FC81CE46AF2000EA6FB /* AppDelegate.swift in Sources */,
 			);
