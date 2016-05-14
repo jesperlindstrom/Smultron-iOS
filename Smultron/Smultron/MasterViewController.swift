@@ -9,7 +9,7 @@
 import UIKit
 
 class MasterViewController: UIViewController {
-
+    private let api = APIService.instance
 
     override func viewDidLoad() {
         super.viewDidLoad()

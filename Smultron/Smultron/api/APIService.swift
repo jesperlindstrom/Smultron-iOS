@@ -1,6 +1,8 @@
 import Foundation
 
 class APIService {
+  static var instance = APIService()
+    
   func createRoom() -> Room {
     return Room(id: 1, code: "THE CODE")
   }

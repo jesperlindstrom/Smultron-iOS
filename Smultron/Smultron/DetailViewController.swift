@@ -1,15 +1,8 @@
-//
-//  DetailViewController.swift
-//  Smultron
-//
-//  Created by Marco Koivisto on 2016-05-12.
-//  Copyright © 2016 Marco Koivisto. All rights reserved.
-//
-
 import UIKit
 
 class DetailViewController: UIViewController {
-
+    private let api = APIService.instance
+    
     @IBOutlet weak var detailDescriptionLabel: UILabel!
     @IBOutlet weak var SwipeView: UIView!
 
@@ -32,6 +25,7 @@ class DetailViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+      
         // Do any additional setup after loading the view, typically from a nib.
         let draggableBackground: DraggableViewBackground = DraggableViewBackground(frame: self.view.frame)
         self.SwipeView.addSubview(draggableBackground)
