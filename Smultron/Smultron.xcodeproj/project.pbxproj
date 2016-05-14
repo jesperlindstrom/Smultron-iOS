@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2B82BF2F9A9D753E01D7F30F /* Pods_Smultron.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECF800F7D5AA1DF89278435D /* Pods_Smultron.framework */; };
 		A989F3421CE7057F00C736E4 /* DraggableViewBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = A989F3411CE7057F00C736E4 /* DraggableViewBackground.swift */; };
 		A989F3441CE705B400C736E4 /* DraggableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A989F3431CE705B400C736E4 /* DraggableView.swift */; };
 		A989F3461CE705D800C736E4 /* OverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A989F3451CE705D800C736E4 /* OverlayView.swift */; };
@@ -29,7 +30,6 @@
 		A9DF3FD41CE46AF2000EA6FB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9DF3FD21CE46AF2000EA6FB /* LaunchScreen.storyboard */; };
 		A9DF3FDF1CE46AF2000EA6FB /* SmultronTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9DF3FDE1CE46AF2000EA6FB /* SmultronTests.swift */; };
 		A9DF3FEA1CE46AF2000EA6FB /* SmultronUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9DF3FE91CE46AF2000EA6FB /* SmultronUITests.swift */; };
-		F8EA8C5EFA9B212C58CB9314 /* libPods-Smultron.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 229C71DD15EA1C2200EF51EA /* libPods-Smultron.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,7 +50,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		229C71DD15EA1C2200EF51EA /* libPods-Smultron.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Smultron.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		67731C71E764CD896A339D74 /* Pods-Smultron.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Smultron.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Smultron/Pods-Smultron.debug.xcconfig"; sourceTree = "<group>"; };
 		A989F3411CE7057F00C736E4 /* DraggableViewBackground.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DraggableViewBackground.swift; sourceTree = "<group>"; };
 		A989F3431CE705B400C736E4 /* DraggableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DraggableView.swift; sourceTree = "<group>"; };
@@ -81,6 +80,7 @@
 		A9DF3FE91CE46AF2000EA6FB /* SmultronUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmultronUITests.swift; sourceTree = "<group>"; };
 		A9DF3FEB1CE46AF2000EA6FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D65E0CF3C014E31E0DC24046 /* Pods-Smultron.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Smultron.release.xcconfig"; path = "Pods/Target Support Files/Pods-Smultron/Pods-Smultron.release.xcconfig"; sourceTree = "<group>"; };
+		ECF800F7D5AA1DF89278435D /* Pods_Smultron.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Smultron.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,7 +96,7 @@
 				A989F3521CE73CBE00C736E4 /* CFNetwork.framework in Frameworks */,
 				A989F3501CE73CAE00C736E4 /* Security.framework in Frameworks */,
 				A989F34E1CE7394900C736E4 /* MobileCoreServices.framework in Frameworks */,
-				F8EA8C5EFA9B212C58CB9314 /* libPods-Smultron.a in Frameworks */,
+				2B82BF2F9A9D753E01D7F30F /* Pods_Smultron.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -128,7 +128,7 @@
 				A989F3511CE73CBE00C736E4 /* CFNetwork.framework */,
 				A989F34F1CE73CAE00C736E4 /* Security.framework */,
 				A989F34D1CE7394900C736E4 /* MobileCoreServices.framework */,
-				229C71DD15EA1C2200EF51EA /* libPods-Smultron.a */,
+				ECF800F7D5AA1DF89278435D /* Pods_Smultron.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
