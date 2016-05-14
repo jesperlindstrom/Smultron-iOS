@@ -7,7 +7,7 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var SwipeView: UIView!
     @IBOutlet weak var codeLabel: UILabel!
     
-    var id = 0
+    var id = ""
     var code = ""
 
     var detailItem: AnyObject? {

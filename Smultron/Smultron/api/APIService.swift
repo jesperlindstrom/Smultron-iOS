@@ -3,7 +3,7 @@ import Alamofire
 
 class APIService {
   static var instance = APIService()
-  static var BASE_URL = "http://localhost:8000"
+  static var BASE_URL = "http://smultron.jesperlindstrom.me"
   var userId: String?
   var roomId: String?
   var destination: String?

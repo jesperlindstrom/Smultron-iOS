@@ -51,7 +51,7 @@ class MasterViewController: UIViewController {
         let theRoom: DetailViewController = segue.destinationViewController as! DetailViewController
         
         theRoom.code = codeField.text!
-        theRoom.id = api.roomId
+        theRoom.id = api.roomId!
     }
 
 
