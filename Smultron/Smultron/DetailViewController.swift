@@ -5,7 +5,10 @@ class DetailViewController: UIViewController {
     
     @IBOutlet weak var detailDescriptionLabel: UILabel!
     @IBOutlet weak var SwipeView: UIView!
-
+    @IBOutlet weak var codeLabel: UILabel!
+    
+    public var id = 0
+    var code = ""
 
     var detailItem: AnyObject? {
         didSet {
@@ -26,7 +29,8 @@ class DetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
       
-        // Do any additional setup after loading the view, typically from a nib.
+        // Do any additional setup after loading the view,q typically from a nib.
+        codeLabel.text = code
         let draggableBackground: DraggableViewBackground = DraggableViewBackground(frame: self.view.frame)
         self.SwipeView.addSubview(draggableBackground)
         navigationController!.navigationBar.barTintColor = UIColor.whiteColor()

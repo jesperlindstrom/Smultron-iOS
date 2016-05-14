@@ -10,13 +10,27 @@ import UIKit
 
 class MasterViewController: UIViewController {
     private let api = APIService.instance
+    var room: Room?
 
+    @IBOutlet weak var codeField: UITextField!
+    @IBOutlet weak var cityField: UITextField!
+    
+    @IBAction func createRoom(sender: AnyObject) {
+        var code = codeField.text
+        room = api.createRoom()
+        //code!
+    }
+    @IBAction func joinRoom(sender: AnyObject) {
+        var city = cityField.text
+        room = api.joinRoom(city!)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationController!.navigationBar.barTintColor = UIColor.whiteColor()
         let logo = UIImage(named: "smultron-logo.png")
         let imageView = UIImageView(image:logo)
-        self.navigationItem.titleView = imageView
+        //self.navigationItem.titleView = imageView
         // Do any additional setup after loading the view, typically from a nib.
     }
     
@@ -36,15 +50,10 @@ class MasterViewController: UIViewController {
     // MARK: - Segues
 
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        /*if segue.identifier == "showDetail" {
-            if let indexPath = self.tableView.indexPathForSelectedRow {
-                let object = objects[indexPath.row] as! NSDate
-                let controller = (segue.destinationViewController as! UINavigationController).topViewController as! DetailViewController
-                controller.detailItem = object
-                controller.navigationItem.leftBarButtonItem = self.splitViewController?.displayModeButtonItem()
-                controller.navigationItem.leftItemsSupplementBackButton = true
-            }
-        }*/
+        let theRoom: DetailViewController = segue.destinationViewController as! DetailViewController
+        
+        theRoom.id = (self.room?.id)!
+        theRoom.code = (self.room?.code)!
     }
 
 
