@@ -30,11 +30,6 @@ class MasterViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        navigationController!.navigationBar.barTintColor = UIColor.whiteColor()
-        let logo = UIImage(named: "Logo.png")
-        let imageView = UIImageView(image:logo)
-        self.navigationItem.titleView = imageView
-        // Do any additional setup after loading the view, typically from a nib.
         
         let notificationCenter = NSNotificationCenter.defaultCenter()
         notificationCenter.addObserver(self, selector: #selector(adjustForKeyboard), name: UIKeyboardWillHideNotification, object: nil)
