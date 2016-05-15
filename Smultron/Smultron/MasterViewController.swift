@@ -5,6 +5,7 @@ class MasterViewController: UIViewController {
 
     @IBOutlet weak var codeField: UITextField!
     @IBOutlet weak var cityField: UITextField!
+    @IBOutlet weak var scrollView: UIScrollView!
     
     var data: NSDictionary?
     
@@ -34,11 +35,37 @@ class MasterViewController: UIViewController {
         let imageView = UIImageView(image:logo)
         self.navigationItem.titleView = imageView
         // Do any additional setup after loading the view, typically from a nib.
+        
+        let notificationCenter = NSNotificationCenter.defaultCenter()
+        notificationCenter.addObserver(self, selector: #selector(adjustForKeyboard), name: UIKeyboardWillHideNotification, object: nil)
+        notificationCenter.addObserver(self, selector: #selector(adjustForKeyboard), name: UIKeyboardWillChangeFrameNotification, object: nil)
     }
     
+    func adjustForKeyboard(notification: NSNotification) {
+        let userInfo = notification.userInfo!
+        
+        let keyboardScreenEndFrame = (userInfo[UIKeyboardFrameEndUserInfoKey] as! NSValue).CGRectValue()
+        let keyboardViewEndFrame = view.convertRect(keyboardScreenEndFrame, fromView: view.window)
+        
+        if notification.name == UIKeyboardWillHideNotification {
+            scrollView.contentInset = UIEdgeInsetsZero
+        } else {
+            scrollView.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: keyboardViewEndFrame.height - 150, right: 0)
+        }
+        
+        scrollView.scrollIndicatorInsets = scrollView.contentInset
+    }
 
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
+        super.navigationController?.navigationBar.hidden = true
+        super.navigationController?.navigationBar.barStyle = UIBarStyle.Black
+    }
+    
+    override func viewWillDisappear(animated: Bool) {
+        super.viewWillDisappear(animated)
+        super.navigationController?.navigationBar.hidden = false
+        super.navigationController?.navigationBar.barStyle = UIBarStyle.Default
     }
 
     override func didReceiveMemoryWarning() {
@@ -48,8 +75,6 @@ class MasterViewController: UIViewController {
 
     func insertNewObject(sender: AnyObject) {
     }
-
-    // MARK: - Segues
 
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         let theRoom: DetailViewController = segue.destinationViewController as! DetailViewController

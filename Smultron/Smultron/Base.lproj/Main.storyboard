@@ -155,11 +155,13 @@
                             <constraint firstAttribute="trailing" secondItem="4XJ-LD-6ed" secondAttribute="trailing" id="q6G-iH-urt"/>
                         </constraints>
                     </view>
+                    <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
                     <navigationItem key="navigationItem" id="cdD-WX-tMU"/>
                     <nil key="simulatedTopBarMetrics"/>
                     <connections>
                         <outlet property="cityField" destination="vj3-xR-0Zd" id="Kdg-yG-pf4"/>
                         <outlet property="codeField" destination="DhU-FN-dmV" id="63s-ri-duE"/>
+                        <outlet property="scrollView" destination="4XJ-LD-6ed" id="Tbz-7K-zaX"/>
                         <segue destination="YJl-9h-GnL" kind="show" identifier="detail" id="Gdj-5z-oyL"/>
                     </connections>
                 </viewController>
@@ -207,7 +209,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="edP-JQ-XCl">
                                 <rect key="frame" x="0.0" y="64" width="600" height="468"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="You've swiped all data :(" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TU2-ws-Q5u">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You've swiped all data :(" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TU2-ws-Q5u">
                                         <rect key="frame" x="209" y="223" width="183" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" red="0.58039215690000001" green="0.60784313729999995" blue="0.71372549019999998" alpha="1" colorSpace="calibratedRGB"/>
@@ -216,7 +218,8 @@
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstItem="TU2-ws-Q5u" firstAttribute="centerY" secondItem="edP-JQ-XCl" secondAttribute="centerY" id="KHR-rH-31w"/>
+                                    <constraint firstItem="TU2-ws-Q5u" firstAttribute="centerX" secondItem="edP-JQ-XCl" secondAttribute="centerX" id="2nv-qo-wvq"/>
+                                    <constraint firstItem="TU2-ws-Q5u" firstAttribute="centerY" secondItem="edP-JQ-XCl" secondAttribute="centerY" id="NEl-JN-mu6"/>
                                 </constraints>
                             </view>
                         </subviews>

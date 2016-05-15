@@ -293,7 +293,7 @@
 				TargetAttributes = {
 					A9DF3FC31CE46AF1000EA6FB = {
 						CreatedOnToolsVersion = 7.3.1;
-						DevelopmentTeam = TC3JJMVCQE;
+						DevelopmentTeam = WF2QRDBF6Q;
 					};
 					A9DF3FD91CE46AF2000EA6FB = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -566,7 +566,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Smultron/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = marcokoivisto.Smultron;
+				PRODUCT_BUNDLE_IDENTIFIER = me.marcokoivisto.Smultron;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};
@@ -581,7 +581,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Smultron/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = marcokoivisto.Smultron;
+				PRODUCT_BUNDLE_IDENTIFIER = me.marcokoivisto.Smultron;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};
